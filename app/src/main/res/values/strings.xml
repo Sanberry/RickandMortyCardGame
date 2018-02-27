@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Rick and Morty Card Game</string>
+    <string name="button">Shoot</string>
+    <string name="click_the_delete_button_to_reset_the_score">Click the Delete Button to Reset the Score</string>
+    <string name="overall_killed_characters_for_this_round">Overall Killed Characters For this Round</string>
+    <string name="_0">0</string>
+    <string name="you_are_a_real_rick_you_are_not_easy_to_be_tricked">You are a real Rick! You are not easy to be tricked!</string>
+    <string name="you_are_a_real_beth_better_to_be_careful_around_you">You are a real Beth! Better to be careful around you!</string>
+    <string name="try_again">TRY AGAIN?</string>
+    <string name="let_s_kill_some_parasites">Let\'s Kill Some Parasites!</string>
+
+</resources>

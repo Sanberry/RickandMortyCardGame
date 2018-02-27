@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_margin_left">20dp</dimen>
+    <dimen name="button_margin_right">20dp</dimen>
+    <dimen name="spacing">10dp</dimen>
+    <dimen name="logo_height">40dp</dimen>
+    <dimen name="weight_space">0dp</dimen>
+    <dimen name="individual_text_score">20dp</dimen>
+    <dimen name="line_space">2dp</dimen>
+    <dimen name="card_image_height">150dp</dimen>
+    <dimen name="progress_height">55dp</dimen>
+    <dimen name="card_image_width">100dp</dimen>
+    <dimen name="spacing_gif">20dp</dimen>
+    <dimen name="results_text_size">18sp</dimen>
+    <dimen name="text_style_size">22sp</dimen>
+    <dimen name="score_text_size">25sp</dimen>
+
+
+</resources>

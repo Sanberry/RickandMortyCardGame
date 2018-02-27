@@ -1,0 +1,140 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ShootButton">
+        <item name="android:layout_marginLeft">@dimen/button_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/button_margin_right</item>
+        <item name="android:text">@string/button</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="LeftCardImages">
+        <item name="android:layout_marginLeft">@dimen/spacing</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <style name="LeftCardImagesLand">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <style name="RightCardImages">
+        <item name="android:layout_marginRight">@dimen/spacing</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <style name="RightCardImagesLand">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <style name="LeftGifImage">
+        <item name="android:layout_marginLeft">@dimen/button_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/button_margin_right</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <style name="LeftGifImageLand">
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="RightGifImage">
+        <item name="android:layout_marginLeft">@dimen/button_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/button_margin_right</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <style name="RightGifImageLand">
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="Result">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/results_text_size</item>
+    </style>
+
+    <style name="MiddleDividerLineExceptGif">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginLeft">@dimen/spacing</item>
+        <item name="android:layout_marginRight">@dimen/spacing</item>
+        <item name="android:background">@color/colorDivider</item>
+    </style>
+    <style name="MiddleDividerLineExceptGifLand">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:background">@color/colorDivider</item>
+        <item name="android:layout_marginTop">@dimen/spacing</item>
+        <item name="android:layout_marginBottom">@dimen/spacing</item>
+    </style>
+    <style name="RelativeLayoutForIcons">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/spacing</item>
+    </style>
+
+    <style name="IndividualScoreView">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:background">@color/colorDivider</item>
+    </style>
+
+    <style name="ProgressSection">
+        <item name="android:background">@color/colorLightPrimary</item>
+        <item name="android:paddingLeft">@dimen/spacing</item>
+        <item name="android:paddingRight">@dimen/spacing</item>
+    </style>
+
+    <style name="TextStyle">
+        <item name="android:textSize">@dimen/text_style_size</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+    </style>
+    <style name="TextStyleLand">
+        <item name="android:textSize">@dimen/results_text_size</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:layout_margin">@dimen/spacing</item>
+    </style>
+    <style name="LinearSpacing">
+        <item name="android:layout_marginTop">@dimen/spacing</item>
+        <item name="android:layout_marginLeft">@dimen/spacing</item>
+        <item name="android:layout_marginRight">@dimen/spacing</item>
+    </style>
+    <style name="GifLinearSpacing">
+        <item name="android:layout_marginTop">@dimen/spacing</item>
+        <item name="android:layout_marginBottom">@dimen/spacing</item>
+    </style>
+
+    <style name="RestartButton">
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:layout_marginTop">@dimen/spacing</item>
+        <item name="android:layout_marginBottom">@dimen/spacing</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:paddingLeft">@dimen/spacing</item>
+        <item name="android:paddingRight">@dimen/spacing</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="OverallScoreTextDisplayStyle">
+        <item name="android:textSize">@dimen/results_text_size</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+    </style>
+    <style name="OverallScoreTextDisplayStyleLand">
+        <item name="android:textSize">@dimen/results_text_size</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+    </style>
+    <style name="OverallScoreTextStyle">
+        <item name="android:textSize">@dimen/text_style_size</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+    </style>
+    <style name="DeleteButton">
+        <item name="android:background">@color/colorLightPrimary</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+</resources>
