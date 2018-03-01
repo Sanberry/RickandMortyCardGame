@@ -13,533 +13,535 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
-    <LinearLayout
-        android:layout_width="@dimen/weight_space"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <RelativeLayout
-            style="@style/RelativeLayoutForIcons"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/weight_space"
-            android:layout_weight="1">
-
-            <ImageView
-                android:id="@+id/player1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_face_black_48dp" />
-
-            <TextView
-                android:id="@+id/overall_score_a"
-                style="@style/IndividualScoreView"
-                android:layout_width="@dimen/individual_text_score"
-                android:layout_height="@dimen/individual_text_score"
-                android:layout_alignBottom="@id/player1"
-                android:layout_alignRight="@id/player1"
-                android:background="@drawable/circle_light_one"
-                android:text="@string/_0" />
-        </RelativeLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/line_space"
-            android:background="@color/colorDivider" />
-
-        <RelativeLayout
-            style="@style/RelativeLayoutForIcons"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/weight_space"
-            android:layout_weight="1">
-
-            <ImageView
-                android:id="@+id/player2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_face_black_48dp" />
-
-            <TextView
-                android:id="@+id/overall_score_b"
-                style="@style/IndividualScoreView"
-                android:layout_width="@dimen/individual_text_score"
-                android:layout_height="@dimen/individual_text_score"
-                android:layout_alignBottom="@id/player2"
-                android:layout_alignRight="@id/player2"
-                android:background="@drawable/circle_light_two"
-                android:text="@string/_0" />
-        </RelativeLayout>
-    </LinearLayout>
-
-    <View
-        style="@style/Divider"
-        android:layout_width="@dimen/line_space"
-        android:layout_height="match_parent" />
-
-    <RelativeLayout
-        android:id="@+id/progress_section"
-        style="@style/ProgressSection"
-        android:layout_width="@dimen/progress_height"
-        android:layout_height="match_parent">
-
-        <ProgressBar
-            android:id="@+id/progress_bar1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_above="@id/line"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:max="4"
-            android:progress="0" />
-
-        <TextView
-            android:id="@+id/score_a"
-            style="@style/TextStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@id/line"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:gravity="center"
-            android:text="@string/_0" />
-
-        <View
-            android:id="@+id/line"
-            style="@style/MiddleDividerLineExceptGifLand"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/line_space" />
-
-        <ProgressBar
-            android:id="@+id/progress_bar2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_below="@id/line"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:max="4"
-            android:progress="0" />
-
-        <TextView
-            android:id="@+id/score_b"
-            style="@style/TextStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_below="@id/line"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:gravity="center"
-            android:text="@string/_0">
-
-        </TextView>
-    </RelativeLayout>
-
-    <View
-        style="@style/Divider"
-        android:layout_width="@dimen/line_space"
-        android:layout_height="match_parent" />
-
-    <!-- player winner A layout -->
-
-    <LinearLayout
-        android:id="@+id/playerAWinner"
-        android:layout_width="@dimen/weight_space"
-        android:layout_weight="7"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:visibility="gone">
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="2"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                style="@style/TextStyleLand"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/weight_space"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="@string/you_are_a_real_rick_you_are_not_easy_to_be_tricked" />
-
-            <View
-                style="@style/Divider"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/line_space" />
-
-            <TextView
-                style="@style/TextStyleLand"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/weight_space"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="@string/you_are_a_real_beth_better_to_be_careful_around_you" />
-
-        </LinearLayout>
-
         <LinearLayout
             android:layout_width="@dimen/weight_space"
-            android:layout_weight="2"
             android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <pl.droidsonroids.gif.GifImageView
-                style="@style/LeftGifImageLand"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/weight_space"
-                android:layout_weight="1"
-                android:src="@drawable/parasite_gif" />
-
-            <View
-                style="@style/Divider"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/line_space" />
-
-            <pl.droidsonroids.gif.GifImageView
-                style="@style/RightGifImageLand"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/weight_space"
-                android:layout_weight="1"
-                android:src="@drawable/poopy_real_gif" />
-        </LinearLayout>
-
-        <View
-            style="@style/Divider"
-            android:layout_width="@dimen/line_space"
-            android:layout_height="match_parent" />
-
-        <LinearLayout
-            style="@style/GifLinearSpacing"
-            android:layout_width="@dimen/weight_space"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                style="@style/TextStyleLand"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/spacing"
-                android:gravity="center"
-                android:text="@string/try_again" />
-
-            <Button
-                style="@style/RestartButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="nextRoundOne"
-                android:text="Indeed!" />
-
-        </LinearLayout>
-    </LinearLayout>
-
-    <!-- player winner B layout -->
-    <LinearLayout
-        android:id="@+id/playerBWinner"
-        android:layout_width="@dimen/weight_space"
-        android:layout_weight="7"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:visibility="gone">
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="2"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                style="@style/TextStyleLand"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/weight_space"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="@string/you_are_a_real_beth_better_to_be_careful_around_you" />
-
-            <View
-                style="@style/Divider"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/line_space" />
-
-            <TextView
-                style="@style/TextStyleLand"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/weight_space"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="@string/you_are_a_real_rick_you_are_not_easy_to_be_tricked" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="@dimen/weight_space"
-            android:layout_weight="2"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <pl.droidsonroids.gif.GifImageView
-                style="@style/LeftGifImageLand"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/weight_space"
-                android:layout_weight="1"
-                android:src="@drawable/poopy_real_gif" />
-
-            <View
-                style="@style/Divider"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/line_space" />
-
-            <pl.droidsonroids.gif.GifImageView
-                style="@style/RightGifImageLand"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/weight_space"
-                android:layout_weight="1"
-                android:src="@drawable/parasite_gif" />
-        </LinearLayout>
-
-        <View
-            style="@style/Divider"
-            android:layout_width="@dimen/line_space"
-            android:layout_height="match_parent" />
-
-        <LinearLayout
-            style="@style/GifLinearSpacing"
-            android:layout_width="@dimen/weight_space"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                style="@style/TextStyleLand"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/spacing"
-                android:gravity="center"
-                android:text="@string/try_again" />
-
-            <Button
-                style="@style/RestartButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="nextRoundOne"
-                android:text="Indeed!" />
-
-        </LinearLayout>
-    </LinearLayout>
-
-    <!-- Game layout -->
-
-    <RelativeLayout
-
-        android:id="@+id/parasite_section"
-        android:layout_width="@dimen/weight_space"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="@dimen/spacing"
-        android:layout_marginTop="@dimen/spacing"
-        android:layout_weight="3"
-        android:visibility="visible">
-
-        <View
-            android:id="@+id/line_next_left"
-            style="@style/Divider"
-            android:layout_width="@dimen/line_space"
-            android:layout_height="match_parent" />
-
-        <ImageView
-            style="@style/LeftCardImagesLand"
-            android:layout_width="@dimen/card_image_width"
-            android:layout_height="@dimen/card_image_height"
-            android:layout_alignParentTop="true"
-            android:layout_centerInParent="true"
-            android:layout_toLeftOf="@id/line_next_right"
-            android:layout_toRightOf="@id/line_next_left"
-            android:src="@drawable/parasite" />
-
-        <Button
-            style="@style/ShootButton"
-            android:layout_width="120dp"
-            android:layout_height="40dp"
-            android:layout_above="@id/para_line"
-            android:layout_centerVertical="true"
-            android:layout_toLeftOf="@id/line_next_right"
-            android:layout_toRightOf="@id/line_next_left"
-            android:background="@color/colorPink"
-            android:onClick="parasite1" />
-
-        <View
-            android:id="@+id/para_line"
-            style="@style/MiddleDividerLineExceptGifLand"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/line_space" />
-
-        <ImageView
-            style="@style/RightCardImagesLand"
-            android:layout_width="@dimen/card_image_width"
-            android:layout_height="@dimen/card_image_height"
-            android:layout_below="@id/para_line"
-            android:layout_centerInParent="true"
-            android:layout_toLeftOf="@id/line_next_right"
-            android:layout_toRightOf="@id/line_next_left"
-            android:src="@drawable/parasite" />
-
-        <Button
-            style="@style/ShootButton"
-            android:layout_width="120dp"
-            android:layout_height="40dp"
-            android:layout_alignParentBottom="true"
-            android:layout_toLeftOf="@id/line_next_right"
-            android:layout_toRightOf="@id/line_next_left"
-            android:background="@color/colorIndigo"
-            android:onClick="parasite2" />
-
-        <View
-            android:id="@+id/line_next_right"
-            style="@style/Divider"
-            android:layout_width="@dimen/line_space"
-            android:layout_height="match_parent"
-            android:layout_alignParentRight="true" />
-    </RelativeLayout>
-
-
-    <RelativeLayout
-        android:id="@+id/real_section"
-        android:layout_width="@dimen/weight_space"
-        android:layout_height="match_parent"
-        android:layout_weight="3"
-        android:paddingBottom="@dimen/spacing"
-        android:paddingTop="@dimen/spacing"
-        android:visibility="visible">
-
-        <View
-            android:id="@+id/line_next_right_real"
-            android:layout_width="@dimen/weight_space"
-            android:layout_height="match_parent"
-            android:layout_alignParentRight="true" />
-
-        <View
-            android:id="@+id/line_next_left_real"
-            android:layout_width="@dimen/weight_space"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true" />
-
-        <ImageView
-            style="@style/LeftCardImagesLand"
-            android:layout_width="@dimen/card_image_width"
-            android:layout_height="@dimen/card_image_height"
-            android:layout_alignParentTop="true"
-            android:layout_centerInParent="true"
-            android:layout_toLeftOf="@id/line_next_right_real"
-            android:layout_toRightOf="@id/line_next_left_real"
-            android:src="@drawable/real" />
-
-        <Button
-            style="@style/ShootButton"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_above="@id/real_line"
-            android:layout_toLeftOf="@id/line_next_right_real"
-            android:layout_toRightOf="@id/line_next_left_real"
-            android:background="@color/colorPink"
-            android:onClick="real1" />
-
-        <View
-            android:id="@+id/real_line"
-            style="@style/MiddleDividerLineExceptGifLand"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/line_space" />
-
-        <ImageView
-            style="@style/RightCardImages"
-            android:layout_width="@dimen/card_image_width"
-            android:layout_height="@dimen/card_image_height"
-            android:layout_below="@id/real_line"
-            android:layout_centerInParent="true"
-            android:layout_toLeftOf="@id/line_next_right_real"
-            android:layout_toRightOf="@id/line_next_left_real"
-            android:src="@drawable/real"
-
-            />
-
-        <Button
-            style="@style/ShootButton"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_alignParentBottom="true"
-            android:layout_toLeftOf="@id/line_next_right_real"
-            android:layout_toRightOf="@id/line_next_left_real"
-            android:background="@color/colorIndigo"
-            android:onClick="real2" />
-    </RelativeLayout>
-
-    <View
-        style="@style/Divider"
-        android:layout_width="@dimen/line_space"
-        android:layout_height="match_parent" />
-
-    <LinearLayout
-        android:layout_width="@dimen/weight_space"
-        android:layout_height="match_parent"
-        android:layout_weight="3"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:id="@+id/overall_score"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/weight_space"
             android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/RelativeLayoutForIcons"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/weight_space"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/player1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_face_black_48dp" />
+
+                <TextView
+                    android:id="@+id/overall_score_a"
+                    style="@style/IndividualScoreView"
+                    android:layout_width="@dimen/individual_text_score"
+                    android:layout_height="@dimen/individual_text_score"
+                    android:layout_alignBottom="@id/player1"
+                    android:layout_alignRight="@id/player1"
+                    android:background="@drawable/circle_light_one"
+                    android:text="@string/_0" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_space"
+                android:background="@color/colorDivider" />
+
+            <RelativeLayout
+                style="@style/RelativeLayoutForIcons"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/weight_space"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/player2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_face_black_48dp" />
+
+                <TextView
+                    android:id="@+id/overall_score_b"
+                    style="@style/IndividualScoreView"
+                    android:layout_width="@dimen/individual_text_score"
+                    android:layout_height="@dimen/individual_text_score"
+                    android:layout_alignBottom="@id/player2"
+                    android:layout_alignRight="@id/player2"
+                    android:background="@drawable/circle_light_two"
+                    android:text="@string/_0" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            style="@style/Divider"
+            android:layout_width="@dimen/line_space"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/progress_section"
+            style="@style/ProgressSection"
+            android:layout_width="@dimen/progress_height"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/progress_bar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/line"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:max="4"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/score_a"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/line"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/_0" />
+
+            <View
+                android:id="@+id/line"
+                style="@style/MiddleDividerLineExceptGifLand"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_space" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/line"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:max="4"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/score_b"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/line"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/_0">
+
+            </TextView>
+        </RelativeLayout>
+
+        <View
+            style="@style/Divider"
+            android:layout_width="@dimen/line_space"
+            android:layout_height="match_parent" />
+
+        <!-- player winner A layout -->
+
+        <LinearLayout
+            android:id="@+id/playerAWinner"
+            android:layout_width="@dimen/weight_space"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:orientation="horizontal"
             android:visibility="gone">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextStyleLand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/weight_space"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/you_are_a_real_rick_you_are_not_easy_to_be_tricked" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_space" />
+
+                <TextView
+                    style="@style/TextStyleLand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/weight_space"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/you_are_a_real_beth_better_to_be_careful_around_you" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/weight_space"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <pl.droidsonroids.gif.GifImageView
+                    style="@style/LeftGifImageLand"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space"
+                    android:layout_weight="1"
+                    android:src="@drawable/parasite_gif" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_space" />
+
+                <pl.droidsonroids.gif.GifImageView
+                    style="@style/RightGifImageLand"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space"
+                    android:layout_weight="1"
+                    android:src="@drawable/poopy_real_gif" />
+            </LinearLayout>
+
+            <View
+                style="@style/Divider"
+                android:layout_width="@dimen/line_space"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                style="@style/GifLinearSpacing"
+                android:layout_width="@dimen/weight_space"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:gravity="center"
-                android:text="@string/overall_killed_characters_for_this_round"
-                android:textColor="@color/colorTextIcons"/>
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/total_kills"
-                style="@style/OverallScoreTextStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/_0" />
+                <TextView
+                    style="@style/TextStyleLand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing"
+                    android:gravity="center"
+                    android:text="@string/try_again" />
 
+                <Button
+                    style="@style/RestartButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="nextRoundOne"
+                    android:text="Indeed!" />
+
+            </LinearLayout>
         </LinearLayout>
+
+        <!-- player winner B layout -->
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/weight_space"
-            android:layout_weight="1"
-            android:gravity="center"
+            android:id="@+id/playerBWinner"
+            android:layout_width="@dimen/weight_space"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextStyleLand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/weight_space"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/you_are_a_real_beth_better_to_be_careful_around_you" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_space" />
+
+                <TextView
+                    style="@style/TextStyleLand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/weight_space"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/you_are_a_real_rick_you_are_not_easy_to_be_tricked" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/weight_space"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <pl.droidsonroids.gif.GifImageView
+                    style="@style/LeftGifImageLand"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space"
+                    android:layout_weight="1"
+                    android:src="@drawable/poopy_real_gif" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_space" />
+
+                <pl.droidsonroids.gif.GifImageView
+                    style="@style/RightGifImageLand"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space"
+                    android:layout_weight="1"
+                    android:src="@drawable/parasite_gif" />
+            </LinearLayout>
+
+            <View
+                style="@style/Divider"
+                android:layout_width="@dimen/line_space"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                style="@style/GifLinearSpacing"
+                android:layout_width="@dimen/weight_space"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextStyleLand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing"
+                    android:gravity="center"
+                    android:text="@string/try_again" />
+
+                <Button
+                    style="@style/RestartButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="nextRoundOne"
+                    android:text="Indeed!" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Game layout -->
+
+        <RelativeLayout
+
+            android:id="@+id/parasite_section"
+            android:layout_width="@dimen/weight_space"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/spacing"
+            android:layout_marginTop="@dimen/spacing"
+            android:layout_weight="3"
+            android:visibility="visible">
+
+            <View
+                android:id="@+id/line_next_left"
+                style="@style/Divider"
+                android:layout_width="@dimen/line_space"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                style="@style/LeftCardImagesLand"
+                android:layout_width="@dimen/card_image_width"
+                android:layout_height="@dimen/card_image_height"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@id/line_next_right"
+                android:layout_toRightOf="@id/line_next_left"
+                android:src="@drawable/parasite" />
+
+            <Button
+                style="@style/ShootButton"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_above="@id/para_line"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/line_next_right"
+                android:layout_toRightOf="@id/line_next_left"
+                android:background="@color/colorPink"
+                android:onClick="parasite1" />
+
+            <View
+                android:id="@+id/para_line"
+                style="@style/MiddleDividerLineExceptGifLand"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_space" />
+
+            <ImageView
+                style="@style/RightCardImagesLand"
+                android:layout_width="@dimen/card_image_width"
+                android:layout_height="@dimen/card_image_height"
+                android:layout_below="@id/para_line"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@id/line_next_right"
+                android:layout_toRightOf="@id/line_next_left"
+                android:src="@drawable/parasite" />
+
+            <Button
+                style="@style/ShootButton"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@id/line_next_right"
+                android:layout_toRightOf="@id/line_next_left"
+                android:background="@color/colorIndigo"
+                android:onClick="parasite2" />
+
+            <View
+                android:id="@+id/line_next_right"
+                style="@style/Divider"
+                android:layout_width="@dimen/line_space"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/real_section"
+            android:layout_width="@dimen/weight_space"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:paddingBottom="@dimen/spacing"
+            android:paddingTop="@dimen/spacing"
+            android:visibility="visible">
+
+            <View
+                android:id="@+id/line_next_right_real"
+                android:layout_width="@dimen/weight_space"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true" />
+
+            <View
+                android:id="@+id/line_next_left_real"
+                android:layout_width="@dimen/weight_space"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true" />
+
+            <ImageView
+                style="@style/LeftCardImagesLand"
+                android:layout_width="@dimen/card_image_width"
+                android:layout_height="@dimen/card_image_height"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@id/line_next_right_real"
+                android:layout_toRightOf="@id/line_next_left_real"
+                android:src="@drawable/real" />
+
+            <Button
+                style="@style/ShootButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_above="@id/real_line"
+                android:layout_toLeftOf="@id/line_next_right_real"
+                android:layout_toRightOf="@id/line_next_left_real"
+                android:background="@color/colorPink"
+                android:onClick="real1" />
+
+            <View
+                android:id="@+id/real_line"
+                style="@style/MiddleDividerLineExceptGifLand"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_space" />
+
+            <ImageView
+                style="@style/RightCardImages"
+                android:layout_width="@dimen/card_image_width"
+                android:layout_height="@dimen/card_image_height"
+                android:layout_below="@id/real_line"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@id/line_next_right_real"
+                android:layout_toRightOf="@id/line_next_left_real"
+                android:src="@drawable/real"
+
+                />
+
+            <Button
+                style="@style/ShootButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@id/line_next_right_real"
+                android:layout_toRightOf="@id/line_next_left_real"
+                android:background="@color/colorIndigo"
+                android:onClick="real2" />
+        </RelativeLayout>
+
+        <View
+            style="@style/Divider"
+            android:layout_width="@dimen/line_space"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="@dimen/weight_space"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
             android:orientation="vertical">
 
-            <ImageButton
-                style="@style/DeleteButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="reset"
-                android:src="@drawable/ic_delete_forever_black_36dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <LinearLayout
+                android:id="@+id/overall_score"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/weight_space"
+                android:layout_weight="1"
                 android:gravity="center"
-                android:text="@string/click_the_delete_button_to_reset_the_score"
-                android:textColor="@color/colorTextIcons" />
+                android:orientation="vertical"
+                android:visibility="visible">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/overall_killed_characters_for_this_round"
+                    android:textColor="@color/colorTextIcons" />
+
+                <TextView
+                    android:id="@+id/total_kills"
+                    style="@style/OverallScoreTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/weight_space"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    style="@style/DeleteButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="reset"
+                    android:src="@drawable/ic_delete_forever_black_36dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/click_the_delete_button_to_reset_the_score"
+                    android:textColor="@color/colorTextIcons" />
+
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-</LinearLayout>
-<ImageView
-android:layout_width="match_parent"
-android:layout_height="@dimen/logo_height"
-android:src="@drawable/rick_and_morty_logo" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/logo_height"
+        android:src="@drawable/rick_and_morty_logo" />
 
 </LinearLayout>
 

@@ -23,14 +23,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         playerBWinner = findViewById(R.id.playerBWinner);
         realSection = findViewById(R.id.real_section);
         progressSection = findViewById(R.id.progress_section);
         parasiteSection = findViewById(R.id.parasite_section);
         score = findViewById(R.id.overall_score);
         playerAWinner = findViewById(R.id.playerAWinner);
-
     }
 
     /**
@@ -192,7 +190,6 @@ public class MainActivity extends AppCompatActivity {
         totalKill = 0;
         progressB = 0;
         progressA = 0;
-
         playerBWinner.setVisibility(LinearLayout.GONE);
         playerAWinner.setVisibility(LinearLayout.GONE);
         realSection.setVisibility(RelativeLayout.VISIBLE);
@@ -229,14 +226,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
         //To save the scores
-        super.onSaveInstanceState(savedInstanceState);
         savedInstanceState.putInt("OverallScoreA", overallScoreViewA);
         savedInstanceState.putInt("OverallScoreB", overallScoreViewB);
         savedInstanceState.putInt("RealPlayerA", realPlayerA);
         savedInstanceState.putInt("RealPlayerB", realPlayerB);
         savedInstanceState.putInt("TotalKill", totalKill);
-        savedInstanceState.putInt("ProgressB", progressB);
         savedInstanceState.putInt("ProgressA", progressA);
+        savedInstanceState.putInt("ProgressA", progressB);
+        super.onSaveInstanceState(savedInstanceState);
     }
 
     @Override
@@ -250,6 +247,12 @@ public class MainActivity extends AppCompatActivity {
         totalKill = savedInstanceState.getInt("TotalKill");
         progressA = savedInstanceState.getInt("ProgressA");
         progressB = savedInstanceState.getInt("ProgressB");
-
+        displayForPlayerB(realPlayerB);
+        displayForPlayerA(realPlayerA);
+        displayForOverallPlayerA(overallScoreViewA);
+        displayForOverallPlayerB(overallScoreViewB);
+        displayForPlayers(totalKill);
+        displayProgressA(progressA);
+        displayProgressB(progressB);
     }
 }
