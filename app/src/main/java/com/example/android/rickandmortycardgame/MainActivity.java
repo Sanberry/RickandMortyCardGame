@@ -32,13 +32,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * increase the point by 1 for Player A
+     * increase the point by 1 for overall score
      */
     public void parasite1(View v) {
         totalKill = totalKill + 1;
         displayForPlayers(totalKill);
     }
-
+    /**
+     * increase the point by 1 for Player A
+     */
     public void real1(View v) {
         realPlayerA = realPlayerA + 1;
         totalKill = totalKill + 1;
@@ -103,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     /**
-     * increase the point by 1 for Player B
+     * increase the point by 1 for overallScore
      */
 
     public void parasite2(View v) {
@@ -112,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     *
+     *increase the point by 1 for Player B
      */
     public void real2(View v) {
         totalKill = totalKill + 1;
